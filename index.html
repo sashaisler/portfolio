@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>Hi! I'm Sasha Isler and I'm currently studying at Columbia University, majoring in Computer Engineering. 
+            My passion for engineering has led me to gain skills and experience in software development, 3D printing CAD design, 
+            and circuits design, and I'm always eager to learn more and apply my new knowledge! </p>
+    </div>
+
+    <div class="projects-container">
+        <div class="project" onclick="openModal('modal1')">
+            <h2 class="project-title">Mini Musical Chairs</h2>
+            <p class="project-desc">Description of Project 1, what it involves, tools used, and its purpose.</p>
+        </div>
+
+        <div class="project" onclick="openModal('modal2')">
+            <h2 class="project-title">ToSendList</h2>
+            <p class="project-desc">Description of Project 2, highlighting unique challenges and solutions.</p>
+        </div>
+
+        <div class="project" onclick="openModal('modal3')">
+            <h2 class="project-title">Crazy Eights</h2>
+            <p class="project-desc">Brief overview of Project 3, its impact, and its scope.</p>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2 class="modal-title">Mini Musical Chairs</h2>
+            <p>This is more detailed information about Project 1.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2 class="modal-title">ToSendList</h2>
+            <p>This is more detailed information about Project 2.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span the="close" onclick="closeModal('modal3')">&times;</span>
+            <h2 class="modal-title">Crazy Eights</h2>
+            <p>This is more detailed information about Project 3.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
