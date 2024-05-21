@@ -13,10 +13,24 @@
     </header>
 
     <div class="about-me">
-        <h2>About Me</h2>
-        <p>Hi! I'm Sasha Isler and I'm currently studying at Columbia University, majoring in Computer Engineering. 
-            My passion for engineering has led me to gain skills and experience in software development, 3D printing CAD design, 
-            and circuits design, and I'm always eager to learn more and apply my new knowledge! </p>
+        <img src="Images/Headshot.jpg" alt="Sasha Headshot" class="about-me-image">
+        <div class="about-me-desc">
+            <h2>About Me</h2>
+            <p>Hi! I'm Sasha Isler and I'm currently studying at Columbia University, majoring in Computer Engineering. 
+            My passion for engineering has led me to gain skills and experience in software development, 3D printing and CAD 
+            design, and circuits analysis, and I'm always eager to learn more and apply my new knowledge! </p>
+            <div class="logo-container">
+                <a href="https://github.com/sisler101" class="logo-links">
+                    <img src="Images/github-logo.png" alt="Github" class="logos">
+                </a>
+                <a href="https://www.linkedin.com/in/sasha-isler-144282258/" class="logo-links">
+                    <img src="Images/linkedin-logo.png" alt="LinkedIn" class="logos">
+                </a>
+                <a href="mailto:sashaisler@gmail.com" class="logo-links">
+                    <img src="Images/email-icon.png" alt="Email" class="logos">
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="projects-container">
@@ -41,21 +55,63 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
             <h2 class="modal-title">Mini Musical Chairs</h2>
-            <p>This is more detailed information about Project 1.</p>
+            <h3>What is it?</h3>
+            <p>Mini Musical Chairs is a game that was created by me and a team of three other people for a class assignment. 
+                We were given the semester to create a game using an Arduino and showcase our project at an expo at the 
+                conclusion of the semester. Our project is a variation on musical chairs that allows for the game to be 
+                played with your fingers. My contribution was writing the code, which was done in the Arduino IDE using C++, 
+                the wiring, CADing, and 3D Printing, in addition to aiding in the overall assembly of the project and contributing 
+                to the presentation at the expo. </p>
+            <p>Github Project: https://github.com/sisler101/Mini-Musical-Chairs</p>
+            <h3>Components:</h3>
+            <p>The project included:
+
+                Two Arduinos (used two to solve power issues that arose from having many components)
+                
+                LCD Display
+                
+                Three buttons (add, subtract, enter)
+                
+                Speaker
+                
+                LED Strip
+                
+                Four Servo Motors
+                
+                Five 3D printed chairs
+                
+                Four 3D printed connectors to attach the servo motors to the chairs
+                
+                Laser Cut box made from wood</p>
+            <h3>Fritzing Diagram:</h3>
+
+            
         </div>
     </div>
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
             <h2 class="modal-title">ToSendList</h2>
-            <p>This is more detailed information about Project 2.</p>
+            <h3>What is it?</h3>
+            <p>ToSend List is a climbing themed to do list I created using HTML and JavaScript. 
+                It is currently published on the Chrome Web Store and is available to add to your Chrome for free. 
+                Not only does it have the basic functionalities of a to do list (add, delete, and mark tasks as complete), 
+                it also allows you to grade your tasks on the bouldering scale (supports both V-Scale and Font-Scale).</p>
+            <h3>Motivation:</h3>
+            <p>This project was inspired by two of my obsessions: rock climbing and to do lists. 
+                I have been rock climbing for 6 years now and even competed on a youth team when I was younger. 
+                I am also always jotting things down on to do lists, whether in my reminders app, notes app, or on a post-it. 
+                To do lists are the only way I manage to stay organized and on top of my tasks. I realized, why not combine 
+                my passion for climbing with my favorite productivity tool? And thats when ToSend List was born. </p>
         </div>
     </div>
     <div id="modal3" class="modal">
         <div class="modal-content">
             <span the="close" onclick="closeModal('modal3')">&times;</span>
             <h2 class="modal-title">Crazy Eights</h2>
-            <p>This is more detailed information about Project 3.</p>
+            <h3>What is it?</h3>
+            <p>Crazy Eights is an Uno like game I coded in Java that is played in the terminal. 
+                This game was an assignment for my Intro to Java class. Check it out on my Github!</p>
         </div>
     </div>
 
