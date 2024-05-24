@@ -6,22 +6,25 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    display: flex;
+    height: 60px;
+    background-color: rgb(41, 40, 40);
     color: white;
-    padding: 10px 20px;
-    text-align: center;
+    text-align: left;
+    align-items: center;
+    padding-left: 15px;
 }
 
 .about-me {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     justify-content: start; /* Aligns content to the start of the flex container */
-    padding: 20px;
-    max-width: 90%; /* Adjust based on your preference */
-    margin: auto; /* Center the entire block horizontally */
+    padding: 37px 40px 0px 40px;
+    margin-bottom: 0;
 }
 
 .about-me-image {
@@ -36,58 +39,69 @@ header {
     align-items: flex-end;
 }
 
-.logo-links {
+.links {
     text-decoration: none;
+    display: flex;
+    padding-right: 10px;
 }
 
-.logos {
-    width: auto; /* Set the image width */
-    height: 30px; /* Maintain aspect ratio */
-    padding-right: 15px;
-}
+.button {
+    background-color: #4e9bdd; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 13px;
+    margin-right: 7px;
+  }
+
+  .button:hover {
+    background-color: #4782dc;
+    cursor: pointer;
+  }
 
 .projects-container {
     display: flex;
-    overflow-x: auto; /* Enables horizontal scrolling if there are many cards */
-    padding: 30px;
+    margin: 0px 30px 0px 30px;
     justify-content: center; /* Centers the projects horizontally */
     align-items: center; /* Centers the projects vertically */
-    flex-grow: 1; /* Takes up the remaining space */
+    flex-wrap: wrap;
+    gap: 7px;
 }
 
-.project {
-    width: 250px; /* Reduced width for each card */
-    height: 200px; /* Set height for shorter cards */
-    margin: 15px;
+.project-card {
+    width: 100px;
+    height: 300px;
+    margin: 10px 11px 10px 11px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Space elements inside the card */
     flex-shrink: 0; /* Prevents flex items from shrinking */
     flex-grow: 1;
     transform: scale(1); /* Ensures the transform is controlled */
     transition: transform 0.3s ease; 
 }
 
-.project:hover {
-    transform: scale(1.03); /* Scales up the project box by 5% */
-    transition: transform 0.3s ease; /* Smooth transition effect */
+.project-contents {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-title {
-    color: #333;
+    color: black;
     font-size: 20px; /* Adjusted font size */
-    margin: 0 0 10px 0;
+    line-height: 1;
 }
 
-.project-desc {
-    color: #666;
-    font-size: 14px;
-    margin: 0 10px 0 0;
+.project-card:hover {
+    transform: scale(1.03); 
+    transition: transform 0.3s ease; 
+    cursor: pointer;
 }
 
 .modal {
@@ -100,15 +114,54 @@ header {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0;
 }
 
 .modal-content {
     border-radius: 8px;
     background-color: #fefefe;
-    margin: 15% auto;
-    padding: 10px 20px 10px 20px;
+    padding: 25px;
     border: 1px solid #888;
-    width: 90%;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 5% auto; /* Reduce top margin to 5% */
+    line-height: 1.5; /* Increase line height for better readability */
+    color: #333; /* Softer text color */
+    font-size: 16px; /* Slightly larger font size */
+    font-weight: 400; /* Normal font weight */
+}
+
+
+.modal-content h2{
+    color: #111; /* Darker color for headings */
+    font-weight: 600; /* Bolder font weight for headings */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.modal-content h3  {
+    color: #111; /* Darker color for headings */
+    font-weight: 600; /* Bolder font weight for headings */
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.modal-content p {
+    margin: 6px 0;
+}
+
+.modal-link {
+    text-decoration: none; 
+    color: #4e9bdd;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
 }
 
 .close {

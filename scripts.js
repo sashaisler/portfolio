@@ -17,9 +17,3 @@ function openModal(modalId) {
         }
     }
 }
-
-// Function to close a modal
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = 'none';
-}
