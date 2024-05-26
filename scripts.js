@@ -17,3 +17,7 @@ function openModal(modalId) {
         }
     }
 }
+
+fetch("https://raw.githubusercontent.com/sisler101/Mini-Musical-Chairs/main/README.md")
+      .then(response => response.text())
+      .then(data => document.getElementById('code').textContent = data)
