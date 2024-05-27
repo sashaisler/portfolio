@@ -17,18 +17,18 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1>Sasha Isler</h1>
-    </header>
+    </header> -->
 
     <div class="about-me">
         <img src="Images/Headshot.jpg" alt="Sasha Headshot" class="about-me-image">
         <div class="about-me-desc">
-            <h1 style="margin: 0px; line-height: 1;">About Me</h1>
-            <p style="font-size: 17px;">Hi! I'm Sasha and I'm currently pursuing a degree in Computer Engineering at Columbia University. 
-                My passion for engineering has enabled me to develop a diverse skill set, including software development, 3D printing and CAD design, and circuit analysis. 
-                I am always eager to expand my knowledge and apply my expertise to new innovative projects and challenges! </p>
-            <p style="font-size: 17px;"> Skills: C; Python; Java; Arduino (C++ variation); VHDL; FPGA; data structures and algorithms; Git; Atlassian’s Jira, Bitbucket, and Confluence; soldering; CAD software (Fusion 360); 3D printing; circuit analysis; Circuit Lab (80+ hours)</p>
+            <h1 style="margin: 0 0 20px 0; font-size: 40px;">Sasha Isler</h1>
+            <p style="font-size: 18px; margin-bottom: 10px;">Hi! I'm Sasha and I'm currently studying Computer Engineering at Columbia University.
+            I have a passion for building things, whether it be software, hardware, or a combination of both.
+            </p>
+            <p style="font-size: 18px; margin-bottom: 15px;"> Skills: C; Java; Python; C++; Arduino; VHDL; FPGA; soldering; CAD software (Fusion 360); 3D printing; Circuit Lab (80+ hours)</p>
             <div class="logo-container">
                 <button onclick="window.location.href='https://github.com/sisler101';" class="button">Github</button>
                 <button onclick="window.location.href='https://www.linkedin.com/in/sasha-isler-144282258/';" class="button">LinkedIn</button>
@@ -38,11 +38,12 @@
         </div>
     </div>
 
-    <h1 style="padding: 25px 0 0px 41px; margin: 0;">Projects:</h1>
+    <h1 style="margin: 25px 0 10px 41px;">Projects:</h1>
     <div class="projects-container">
         <div class="project-card" onclick="openModal('modal1')">
             <div class="project-contents">
                 <h2 class="project-title">Mini Musical Chairs</h2>
+                <img src="Images/expo.png" style="width: 100%; overflow: hidden;">
             </div>
         </div>
 
@@ -71,13 +72,32 @@
     <!-- Modals -->
     <div id="modal1" class="modal">
         <div class="modal-content">
+            <h1>Mini Musical Chairs</h1>
             
+            <video width="500" controls>
+                <source src="Images/ProjectSENDDAoE.mov" type="video/mp4">
+            </video>
+            <div class="description">
+                <div>
+                    <h2>Tools & Technologies</h2>
+                    <p>C++, Arduino, Fusion 360, 3D printing</pp>
+                </div>
+                <div>
+                    <h2>Description</h2>
+                    <p>Mini Musical Chairs is a game I developed with a team of three other students as part of a class assignment. We were tasked with building a game using an Arduino over the course of a semester to be showcased at an end-of-semester expo. I led my team in creating our project: a finger-operated adaptation of musical chairs, designed for engaging gameplay through simple hand movements.</p>
+                </div>
+            </div>
+            <div class="link-container">
+                <a href="" class="modal-link">Check out the code!</a>
+                <a href="" class="modal-link">Check out the extension!</a>
+            </div>
         </div>
     </div>
 
     <div id="modal2" class="modal">
         <div class="modal-content">
-            <div>
+            <h1>ToSend List</h1>
+            <div class="description">
                 <div>
                     <h2>Tools & Technologies</h2>
                     <p>Html, JavaScript, Chrome Developer</pp>
@@ -85,9 +105,13 @@
                 <div>
                     <h2>Description</h2>
                     <p>ToSend List is a climbing themed to do list I created using HTML and JavaScript. It is currently published on the Chrome Web Store and is available for free. Not only does it have the basic functionalities of a to do list (add, delete, and mark tasks as complete), it also allows you to grade your tasks on the bouldering scale (supports both V-Scale and Font-Scale).</p>
-                    <h3>My Motivation</h3>
+                    <h3>My Motivation:</h3>
                     <p>This project was inspired by two of my obsessions: rock climbing and to-do lists. Throughout my daily life, I am dedicated to staying organized and consistently use to-do lists, whether on paper post-its or digital apps. When I'm not at school or engaged with other responsibilities, you can find me at the nearest rock climbing gym. I have been an avid rock climber for seven years, competing at both Youth and Collegiate levels. Recognizing the potential to combine these two interests, I developed ToSend List, seamlessly merging my enthusiasm for climbing with my commitment to productivity.</p>
                 </div>
+            </div>
+            <div class="link-container">
+                <a href="" class="modal-link">Check out the code!</a>
+                <a href="" class="modal-link">Check out the extension!</a>
             </div>
         </div>
     </div>
