@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <style type="text/css">
-    @font-face {
-        font-family: Bitter;
-        src: url(Bitter-VariableFont_wght.ttf);
-    }
-</style> -->
 
 <head>
     <meta charset="UTF-8">
@@ -27,10 +21,10 @@
             <h1 style="margin: 0 0 20px 0; font-size: 40px;">Sasha Isler</h1>
             <p style="font-size: 17px; margin-bottom: 10px;">
                 Hi! I'm Sasha and I'm currently studying Computer Engineering at Columbia University.
-                My academic journey, along with professional experience with internships, has led me to grow my passion for developing at the intersection of hardware and software.
-                I also love board games, escape rooms, and rock climbing which I started 7 years ago and have competed at both Youth and Collegiate levels.   
+                My academic journey, along with professional experience during internships and working in labs, has led me to grow my passion for developing at the intersection of hardware and software.
+                I also love rock climbing, which I began seven years ago and have even competed at both Youth and Collegiate levels, as well as board games and escape rooms.
             </p>
-            <p style="font-size: 17px; margin-bottom: 15px;"> Skills: C; Java; Python; C++; Arduino; VHDL; FPGA; CAD software (Fusion 360); 3D printing; Circuit Lab & Equipment (80+ hours); BLE devices (ESP32, NRF52)</p>
+            <p style="font-size: 17px; margin-bottom: 15px;"> Skills: C; Java; Python; C++; Arduino; VHDL; FPGA; CAD software (Fusion 360); 3D printing; Circuit Lab & Equipment (80+ hours); BLE devices (ESP32, nRF52)</p>
             <div class="logo-container">
                 <button onclick="window.location.href='https://github.com/sisler101';" class="button">Github</button>
                 <button onclick="window.location.href='https://www.linkedin.com/in/sasha-isler-144282258/';" class="button">LinkedIn</button>
@@ -52,7 +46,7 @@
         <div class="project-card" onclick="openModal('modal2')">
             <div class="project-contents">
                 <h2 class="project-title">ToSend List</h2>
-                <img src="Images/ToSend.png" style="width: 100%; overflow: hidden;">
+                <img src="Images/ToDo.png" style="width: 100%; overflow: hidden;">
             </div>
         </div>
 
@@ -102,7 +96,7 @@
         <div class="modal-content">
             <h1>ToSend List</h1>
             <div style="display: flex; justify-content: center;">
-                <img src="Images/ToDo.png" width="400px">
+                <img src="Images/ToSend.png" width="400px">
             </div>
             
             <div class="description">
@@ -244,12 +238,28 @@
 
     <div id="modal4" class="modal">
         <div class="modal-content">
-            <h2 class="modal-title">Crazy Eights</h2>
-
-            <h3>What is it?</h3>
-            <p>Crazy Eights is an Uno like game I coded in Java that is played in the terminal. 
-                This game was an assignment for my Intro to Java class. Check it out on my Github!</p>
-        </div>
+            <h1>Crazy Eights</h1>
+            <div style="display: flex; justify-content: center;">
+                <video width="500" autoplay muted loop>
+                    <source src="Images/UnoVid.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="description">
+                <div>
+                    <h2>Tools & Technologies</h2>
+                    <p>Java</pp>
+                </div>
+                <div>
+                    <h2>Description</h2>
+                    <p>
+                        Crazy Eights is an Uno game I created in Java. It features a 52 card deck, ability to use 8's as wilds, and includes sybmbols to differentiate the suits.
+                    </p>          
+                </div>
+            </div>
+            <div class="link-container">
+                <a href="https://github.com/sisler101/Crazy-Eights" class="modal-link">Check out the code!</a>
+            </div>
     </div>
     
 
