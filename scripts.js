@@ -1,19 +1,15 @@
-// Function to open a modal
-function openModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = 'block';
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Get all project cards
+    const projectCards = document.querySelectorAll('.project-card');
 
-    // When the user clicks anywhere outside of the modal content, close it
-    window.onclick = function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    }
+    // Add click event listener to each project card
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Get the URL from the data attribute
+            const url = card.getAttribute('data-url');
+            // Open the new page
+            window.location.href = url;
+        });
+    });
+});
 
-    // When the user presses the Esc key, close it
-    window.onkeydown = function(event) {
-        if (event.key === 'Escape') {
-            modal.style.display = 'none';
-        }
-    }
-}
