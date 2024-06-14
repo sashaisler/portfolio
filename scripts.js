@@ -13,3 +13,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    console.log('Menu:', menu); // Check if the menu is correctly selected
+    if (menu) {
+        menu.classList.toggle('show');
+        console.log('Class toggled:', menu.classList); // Check the class list after toggling
+    } else {
+        console.error('Menu element not found');
+    }
+}
+

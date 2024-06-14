@@ -26,7 +26,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-right: 15px;
 }
 
 .header-left a {
@@ -47,11 +46,23 @@ header {
     text-decoration: none;
     font-size: 18px;
     margin-left: 20px;
+    margin-right: 20px;
     transition: color 0.2s ease;
 }
 
-.header-container a:hover{
-    
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu .bar {
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+    transition: 0.4s;
+    border-radius: 20px;
 }
 
 .underline-effect {
@@ -80,23 +91,66 @@ header {
     right: 0;
 }
 
+@media (max-width: 520px) {
+    .nav-menu {
+        display: none !important;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    .nav-menu.show {
+        display: flex !important;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .underline-effect {
+        background: white !important;
+    }
+
+    .underline-effect::after {
+        background: white !important;
+    }
+}
+
 .about-me {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
-    justify-content: start; /* Aligns content to the start of the flex container */
+    align-items: center;
     padding: 37px 40px 0px 40px;
     margin-bottom: 0;
 }
 
+@media (max-width: 600px) {
+    .about-me {
+        flex-direction: column; 
+    }
+    .about-me-image {
+        align-self: flex-start;
+    }
+}
+
 .about-me-image {
-    width: 200px; /* Set the image width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add some space between the image and the text */
-    border-radius: 4%; /* Makes the image circular */
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4%;
+    margin-bottom: 25px;
 }
 
 .logo-container {
-    display: flex;  /* Establishes a flex container */
+    display: flex;
     align-items: flex-end;
 }
 
@@ -120,8 +174,8 @@ header {
   }
 
 .button:hover {
-background-color: #4782dc;
-cursor: pointer;
+    background-color: #4782dc;
+    cursor: pointer;
 }
 
 .project-cards-container {
@@ -189,6 +243,12 @@ cursor: pointer;
 .description {
     display: flex;
     gap: 60px;
+}
+
+@media (max-width: 600px) {
+    .description {
+        flex-direction: column;
+    }
 }
 
 .project-link {
