@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasha Isler</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sasha Isler | Software &amp; Embedded Systems</title>
+    <meta name="description" content="Portfolio for Sasha Isler, a Columbia University Computer Engineering student focused on software engineering and embedded systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css?v=26">
+    <script src="scripts.js?v=3" defer></script>
 </head>
-
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-container">
-            <div class="header-left">
-                <a href="index.html">Sasha Isler</a>
-            </div>
+            <a href="index.html" class="brand">Sasha Isler</a>
             <div class="header-right">
-                <nav style="line-height: 1;" class="nav-menu">
-                    <a href="index.html" class="underline-effect">Home</a>
-                    <a href="projects.html" class="underline-effect">Projects</a>
-                    <a href="https://drive.google.com/file/d/10LlTIpQc-pZr1T_7ukEf6i2Fp0eohWaD/view?usp=sharing" class="underline-effect">Resume</a>
+                <nav class="site-nav" id="site-nav">
+                    <a href="index.html" class="nav-link" aria-current="page">About</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
                 </nav>
-                <div class="menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <div class="about-me">
-        <img src="Images/Headshot.jpg" alt="Sasha Headshot" class="about-me-image">
-        <div class="about-me-desc">
-            <h1 style="margin: 0 0 20px 0; font-size: 35px;">About Me</h1>
-            <p style="font-size: 17px; margin-bottom: 10px; color: black;">
-                Hi! I'm Sasha and I'm currently studying Computer Engineering at Columbia University.
-                My academic journey, along with professional experience during internships and working in labs, has led me to grow my passion for software engineering and embedded systems.
-                I also love rock climbing and have been competing for 7 years, as well as board games and escape rooms!
-            </p>
-            <p style="font-size: 17px; margin-bottom: 15px; color: black;"> Skills: C/C++; Python; Go; Java; Arduino; AWS; VHDL & SystemVerilog; FPGA; CAD software (Fusion 360); 3D printing; Circuit Lab & Equipment (80+ hours); BLE devices (ESP32, nRF52); Velodyne LiDAR; 140GHz channel sounder</p>
-            <div class="logo-container">
-                <button onclick="window.location.href='https://github.com/sashaisler';" class="button">Github</button>
-                <button onclick="window.location.href='https://www.linkedin.com/in/sasha-isler-144282258/';" class="button">LinkedIn</button>
-                <button onclick="window.location.href='mailto:sashaisler@gmail.com';" class="button">Email</button>
+    <main class="page-shell">
+        <section class="hero-card">
+            <div class="hero-copy">
+                <h1 class="hero-title">Sasha Isler</h1>
+                <p class="hero-lede bio-paragraph">
+                    I’m Sasha Isler, a computer engineering student at Columbia University with interests in systems,
+                    embedded computing, and networking. My work has included cloud-scale automation at AWS, wireless and
+                    sensing research in Columbia’s WiMNet Lab, embedded firmware development, and FPGA-based projects. I
+                    love building systems from the ground up and solving problems that sit at the boundary between hardware
+                    and software.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://drive.google.com/file/d/10LlTIpQc-pZr1T_7ukEf6i2Fp0eohWaD/view?usp=sharing" class="button-link secondary" target="_blank" rel="noreferrer">View Resume</a>
+                    <a href="https://www.linkedin.com/in/sasha-isler-144282258/" class="button-link secondary" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="mailto:sashaisler@gmail.com" class="button-link secondary">Email</a>
+                    <a href="projects.html" class="button-link secondary">Projects</a>
+                </div>
+                <ul class="skill-list">
+                    <li>C / C++</li>
+                    <li>Python</li>
+                    <li>Go</li>
+                    <li>Java</li>
+                    <li>Arduino</li>
+                    <li>AWS</li>
+                    <li>VHDL</li>
+                    <li>SystemVerilog</li>
+                    <li>FPGA</li>
+                    <li>Fusion 360</li>
+                    <li>3D Printing</li>
+                    <li>BLE Devices</li>
+                </ul>
             </div>
-        </div>
-    </div>
 
-    <script src="scripts.js"></script>
-
+            <div class="portrait-panel">
+                <img
+                    src="Images/profile-photo-latest.jpeg"
+                    alt="Portrait of Sasha Isler"
+                    class="about-me-image"
+                    width="1597"
+                    height="1795"
+                    decoding="async"
+                >
+            </div>
+        </section>
+    </main>
 </body>
 </html>

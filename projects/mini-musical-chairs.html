@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasha Isler</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
+    <title>Mini Musical Chairs | Sasha Isler</title>
+    <meta name="description" content="Mini Musical Chairs is an Arduino game project by Sasha Isler built for an end-of-semester expo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles.css?v=26">
+    <script src="../scripts.js?v=3" defer></script>
 </head>
-
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-container">
-            <div class="header-left">
-                <a href="../index.html">Sasha Isler</a>
-            </div>
+            <a href="../index.html" class="brand">Sasha Isler</a>
             <div class="header-right">
-                <nav style="line-height: 1;" class="nav-menu">
-                    <a href="../index.html" class="underline-effect">Home</a>
-                    <a href="../projects.html" class="underline-effect">Projects</a>
-                    <a href="https://drive.google.com/file/d/10LlTIpQc-pZr1T_7ukEf6i2Fp0eohWaD/view?usp=sharing" class="underline-effect">Resume</a>
+                <nav class="site-nav" id="site-nav">
+                    <a href="../index.html" class="nav-link">About</a>
+                    <a href="../projects.html" class="nav-link" aria-current="page">Projects</a>
                 </nav>
-                <div class="menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <div class="project">
-        <h1>Mini Musical Chairs</h1>
-        <div class="project-media">
-            <video width="500" controls>
-                <source src="../Images/ProjectSENDDAoE.mov" type="video/mp4">
-            </video>
-        </div>
-        
-        <div class="description">
-            <div>
-                <h2>Tools & Technologies</h2>
-                <p>C++, Arduino, Fusion 360, 3D printing</pp>
-            </div>
-            <div>
-                <h2>Description</h2>
-                <p>Mini Musical Chairs is a game I developed with a team of three other students as part of a class assignment. We were tasked with building a game using an Arduino over the course of a semester to be showcased at an end-of-semester expo. I led my team in creating our project: a finger-operated adaptation of musical chairs, designed for engaging gameplay through simple hand movements.</p>
-                <p>Mini Musical Chairs allows for up to 6 players, uses both a speaker and an LED strip to signal the end of a round, and each round lasts for a random amount of time to add the classic element of suspense to the game.</p>
-            </div>
-        </div>
-        <div class="link-container">
-            <a href="https://github.com/sashaisler/Mini-Musical-Chairs" class="project-link">Check out the code!</a>
-        </div>
-    </div>
+    <main class="page-shell">
+        <article class="project-page">
+            <a href="../projects.html" class="back-link">Back to projects</a>
 
+            <section class="project-hero-card">
+                <div class="project-layout">
+                    <div class="project-copy">
+                        <div class="project-heading-row">
+                            <h1 class="project-title">Mini Musical Chairs</h1>
+                            <a href="https://github.com/sashaisler/Mini-Musical-Chairs" class="button-link primary" target="_blank" rel="noreferrer">Check out the code!</a>
+                        </div>
+                    </div>
 
+                    <div class="project-media-card">
+                        <div class="media-frame video-frame">
+                            <video controls preload="metadata">
+                                <source src="../Images/ProjectSENDDAoE.mov" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-detail">
+                            <h2>Tools &amp; Technologies</h2>
+                            <p>C++, Arduino, Fusion 360, 3D printing</p>
+                        </div>
+
+                        <div class="project-detail">
+                            <h2>Description</h2>
+                            <p>
+                                Mini Musical Chairs is a game I developed with a team of three other students as part of a class
+                                assignment. We were tasked with building a game using an Arduino over the course of a semester to
+                                be showcased at an end-of-semester expo. I led my team in creating our project: a finger-operated
+                                adaptation of musical chairs, designed for engaging gameplay through simple hand movements.
+                            </p>
+                            <p>
+                                Mini Musical Chairs allows for up to 6 players, uses both a speaker and an LED strip to signal
+                                the end of a round, and each round lasts for a random amount of time to add the classic element
+                                of suspense to the game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>

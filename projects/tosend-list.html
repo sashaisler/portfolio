@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasha Isler</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
+    <title>ToSend List | Sasha Isler</title>
+    <meta name="description" content="ToSend List is a climbing-themed Chrome extension by Sasha Isler for organizing tasks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles.css?v=26">
+    <script src="../scripts.js?v=3" defer></script>
 </head>
-
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-container">
-            <div class="header-left">
-                <a href="../index.html">Sasha Isler</a>
-            </div>
+            <a href="../index.html" class="brand">Sasha Isler</a>
             <div class="header-right">
-                <nav style="line-height: 1;" class="nav-menu">
-                    <a href="../index.html" class="underline-effect">Home</a>
-                    <a href="../projects.html" class="underline-effect">Projects</a>
-                    <a href="https://drive.google.com/file/d/10LlTIpQc-pZr1T_7ukEf6i2Fp0eohWaD/view?usp=sharing" class="underline-effect">Resume</a>
+                <nav class="site-nav" id="site-nav">
+                    <a href="../index.html" class="nav-link">About</a>
+                    <a href="../projects.html" class="nav-link" aria-current="page">Projects</a>
                 </nav>
-                <div class="menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <div class="project">
-        <h1>ToSend List</h1>
-        <div style="display: flex; justify-content: center;">
-            <img src="../Images/ToSend.png" width="400px">
-        </div>
-        
-        <div class="description">
-            <div>
-                <h2>Tools & Technologies</h2>
-                <p>HTML, JavaScript, Chrome Developer</pp>
-            </div>
-            <div>
-                <h2>Description</h2>
-                <p>ToSend List is a climbing themed to do list I created using HTML and JavaScript. It is currently published on the Chrome Web Store and is available for free. Not only does it have the basic functionalities of a to do list (add, delete, and mark tasks as complete), it also allows you to grade your tasks on the bouldering scale (supports both V-Scale and Font-Scale).</p>
-                <h3>My Motivation:</h3>
-                <p>This project was inspired by two of my obsessions: rock climbing and to-do lists. Throughout my daily life, I am dedicated to staying organized and consistently use to-do lists, whether on paper post-its or digital apps. When I'm not at school or engaged with other responsibilities, you can find me at the nearest rock climbing gym. I have been an avid rock climber for seven years, competing at both Youth and Collegiate levels. Recognizing the potential to combine these two interests, I developed ToSend List, seamlessly merging my enthusiasm for climbing with my commitment to productivity.</p>
-            </div>
-        </div>
-        <div class="link-container">
-            <a href="https://github.com/sashaisler/ToSend-List" class="project-link">Check out the code!</a>
-            <a href="https://chromewebstore.google.com/detail/tosend-list/napcdoaocdpckgahdafbmppjbfjmpckd" class="project-link">Check out the extension!</a>
-        </div>
-    </div>
+    <main class="page-shell">
+        <article class="project-page">
+            <a href="../projects.html" class="back-link">Back to projects</a>
 
-    <script src="scripts.js"></script>
+            <section class="project-hero-card">
+                <div class="project-layout">
+                    <div class="project-copy">
+                        <div class="project-heading-row">
+                            <h1 class="project-title">ToSend List</h1>
+                            <div class="project-actions project-actions-inline">
+                                <a href="https://github.com/sashaisler/ToSend-List" class="button-link primary" target="_blank" rel="noreferrer">Check out the code!</a>
+                                <a href="https://chromewebstore.google.com/detail/tosend-list/napcdoaocdpckgahdafbmppjbfjmpckd" class="button-link secondary" target="_blank" rel="noreferrer">Check out the extension!</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="project-media-card">
+                        <div class="media-frame image-frame">
+                            <img src="../Images/ToSend.png" alt="Screenshot of the ToSend List extension" loading="eager" decoding="async">
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-detail">
+                            <h2>Tools &amp; Technologies</h2>
+                            <p>HTML, JavaScript, Chrome Developer</p>
+                        </div>
+
+                        <div class="project-detail">
+                            <h2>Description</h2>
+                            <p>
+                                ToSend List is a climbing themed to do list I created using HTML and JavaScript. It is currently
+                                published on the Chrome Web Store and is available for free. Not only does it have the basic
+                                functionalities of a to do list (add, delete, and mark tasks as complete), it also allows you to
+                                grade your tasks on the bouldering scale (supports both V-Scale and Font-Scale).
+                            </p>
+                            <p><strong>My Motivation:</strong></p>
+                            <p>
+                                This project was inspired by two of my obsessions: rock climbing and to-do lists. Throughout my
+                                daily life, I am dedicated to staying organized and consistently use to-do lists, whether on paper
+                                post-its or digital apps. When I'm not at school or engaged with other responsibilities, you can
+                                find me at the nearest rock climbing gym. I have been an avid rock climber for seven years,
+                                competing at both Youth and Collegiate levels. Recognizing the potential to combine these two
+                                interests, I developed ToSend List, seamlessly merging my enthusiasm for climbing with my
+                                commitment to productivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>

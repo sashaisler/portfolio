@@ -1,26 +1,34 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Get all project cards
-    const projectCards = document.querySelectorAll('.project-card');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.menu');
+    const navMenu = document.querySelector('.site-nav');
 
-    // Add click event listener to each project card
-    projectCards.forEach(card => {
-        card.addEventListener('click', () => {
-            // Get the URL from the data attribute
-            const url = card.getAttribute('data-url');
-            // Open the new page
-            window.location.href = url;
-        });
+    if (!menuButton || !navMenu) {
+        return;
+    }
+
+    const setMenuState = (isOpen) => {
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        navMenu.classList.toggle('show', isOpen);
+    };
+
+    menuButton.addEventListener('click', () => {
+        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+        setMenuState(!isExpanded);
+    });
+
+    navMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setMenuState(false));
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 760) {
+            setMenuState(false);
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            setMenuState(false);
+        }
     });
 });
-
-function toggleMenu() {
-    const menu = document.querySelector('.nav-menu');
-    console.log('Menu:', menu); // Check if the menu is correctly selected
-    if (menu) {
-        menu.classList.toggle('show');
-        console.log('Class toggled:', menu.classList); // Check the class list after toggling
-    } else {
-        console.error('Menu element not found');
-    }
-}
-

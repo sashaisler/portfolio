@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasha Isler</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
+    <title>Crazy Eights | Sasha Isler</title>
+    <meta name="description" content="Crazy Eights is a Java card game project by Sasha Isler inspired by Uno gameplay.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles.css?v=26">
+    <script src="../scripts.js?v=3" defer></script>
 </head>
-
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-container">
-            <div class="header-left">
-                <a href="../index.html">Sasha Isler</a>
-            </div>
+            <a href="../index.html" class="brand">Sasha Isler</a>
             <div class="header-right">
-                <nav style="line-height: 1;" class="nav-menu">
-                    <a href="../index.html" class="underline-effect">Home</a>
-                    <a href="../projects.html" class="underline-effect">Projects</a>
-                    <a href="https://drive.google.com/file/d/10LlTIpQc-pZr1T_7ukEf6i2Fp0eohWaD/view?usp=sharing" class="underline-effect">Resume</a>
+                <nav class="site-nav" id="site-nav">
+                    <a href="../index.html" class="nav-link">About</a>
+                    <a href="../projects.html" class="nav-link" aria-current="page">Projects</a>
                 </nav>
-                <div class="menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
-        <div class="project">
-            <h1>Crazy Eights</h1>
-            <div style="display: flex; justify-content: center;">
-                <video width="500" autoplay muted loop>
-                    <source src="../Images/UnoVid.mp4" type="video/mp4">
-                </video>
-            </div>
-            
-            <div class="description">
-                <div>
-                    <h2>Tools & Technologies</h2>
-                    <p>Java</pp>
-                </div>
-                <div>
-                    <h2>Description</h2>
-                    <p>
-                        Crazy Eights is an Uno game I created in Java. It features a 52 card deck, ability to use 8's as wilds, and includes symbols to differentiate the suits.
-                    </p>          
-                </div>
-            </div>
-            <div class="link-container">
-                <a href="https://github.com/sashaisler/Crazy-Eights" class="project-link">Check out the code!</a>
-            </div>
-        </div>
+    <main class="page-shell">
+        <article class="project-page">
+            <a href="../projects.html" class="back-link">Back to projects</a>
 
+            <section class="project-hero-card">
+                <div class="project-layout">
+                    <div class="project-copy">
+                        <div class="project-heading-row">
+                            <h1 class="project-title">Crazy Eights</h1>
+                            <a href="https://github.com/sashaisler/Crazy-Eights" class="button-link primary" target="_blank" rel="noreferrer">Check out the code!</a>
+                        </div>
+                    </div>
 
+                    <div class="project-media-card">
+                        <div class="media-frame video-frame">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="../Images/UnoVid.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-detail">
+                            <h2>Tools &amp; Technologies</h2>
+                            <p>Java</p>
+                        </div>
+
+                        <div class="project-detail">
+                            <h2>Description</h2>
+                            <p>
+                                Crazy Eights is an Uno game I created in Java. It features a 52 card deck, ability to use 8's as
+                                wilds, and includes symbols to differentiate the suits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>

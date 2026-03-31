@@ -1,75 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasha Isler</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sasha Isler | Projects</title>
+    <meta name="description" content="Selected software, embedded systems, and hardware projects by Sasha Isler.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css?v=26">
+    <script src="scripts.js?v=3" defer></script>
 </head>
-
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-container">
-            <div class="header-left">
-                <a href="index.html">Sasha Isler</a>
-            </div>
+            <a href="index.html" class="brand">Sasha Isler</a>
             <div class="header-right">
-                <nav style="line-height: 1;" class="nav-menu">
-                    <a href="index.html" class="underline-effect">Home</a>
-                    <a href="projects.html" class="underline-effect">Projects</a>
-                    <a href="https://drive.google.com/file/d/10LlTIpQc-pZr1T_7ukEf6i2Fp0eohWaD/view?usp=sharing" class="underline-effect">Resume</a>
+                <nav class="site-nav" id="site-nav">
+                    <a href="index.html" class="nav-link">About</a>
+                    <a href="projects.html" class="nav-link" aria-current="page">Projects</a>
                 </nav>
-                <div class="menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
+    <main class="page-shell">
+        <section class="page-intro">
+            <h1 class="page-title">Projects</h1>
+        </section>
 
-    <h1 style="margin: 40px 0; display: flex; align-self: center; margin-top: 50px;">Projects Portfolio</h1>
-    <div class="project-cards-container">
-        <div class="project-card" data-url="projects/mini-musical-chairs.html">
-            <div class="project-card-contents">
-                <h2 class="project-card-title">Mini Musical Chairs</h2>
-                <img src="Images/expo.png" class="card-img">
-            </div>
-        </div>
+        <section class="project-grid" aria-label="Project portfolio">
+            <a href="projects/mini-musical-chairs.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="Images/expo.png" alt="Mini Musical Chairs project" width="1030" height="992" loading="lazy" decoding="async">
+                </div>
+                <div class="project-card-body">
+                    <h2 class="project-card-title">Mini Musical Chairs</h2>
+                    <p>
+                        A finger-operated Arduino game built for an end-of-semester expo, combining hardware signals,
+                        playful interaction, and team-led product development.
+                    </p>
+                    <div class="project-tags">
+                        <span>Arduino</span>
+                        <span>C++</span>
+                        <span>3D Printing</span>
+                    </div>
+                    <div class="project-arrow">Open Project</div>
+                </div>
+            </a>
 
-        <div class="project-card" data-url="projects/tosend-list.html">
-            <div class="project-card-contents">
-                <h2 class="project-card-title">ToSend List</h2>
-                <img src="Images/ToDo.png"  class="card-img">
-            </div>
-        </div>
+            <a href="projects/tosend-list.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="Images/ToDo.png" alt="ToSend List project" width="700" height="576" loading="lazy" decoding="async">
+                </div>
+                <div class="project-card-body">
+                    <h2 class="project-card-title">ToSend List</h2>
+                    <p>
+                        A climbing-themed to-do list browser extension that turns task management into a more visual and
+                        personal experience.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                        <span>Chrome Extension</span>
+                    </div>
+                    <div class="project-arrow">Open Project</div>
+                </div>
+            </a>
 
-        <div class="project-card" data-url="projects/fpga-piano.html">
-            <div class="project-card-contents">
-                <h2 class="project-card-title">FPGA Piano</h2>
-                <img src="Images/FPGA.png"  class="card-img">
-            </div>
-        </div>
+            <a href="projects/fpga-piano.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="Images/FPGA.png" alt="FPGA Piano project" width="1032" height="1027" loading="lazy" decoding="async">
+                </div>
+                <div class="project-card-body">
+                    <h2 class="project-card-title">FPGA Piano</h2>
+                    <p>
+                        A collaborative FPGA build for digital systems lab that translated hardware logic into a working,
+                        playable piano.
+                    </p>
+                    <div class="project-tags">
+                        <span>VHDL</span>
+                        <span>Vivado</span>
+                        <span>FPGA</span>
+                    </div>
+                    <div class="project-arrow">Open Project</div>
+                </div>
+            </a>
 
-        <div class="project-card" data-url="projects/crazy-eights.html">
-            <div class="project-card-contents">
-                <h2 class="project-card-title">Crazy Eights</h2>
-                <img src="Images/Uno.png"  class="card-img">
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    <script src="scripts.js"></script>
-
+            <a href="projects/crazy-eights.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="Images/Uno.png" alt="Crazy Eights project" width="567" height="480" loading="lazy" decoding="async">
+                </div>
+                <div class="project-card-body">
+                    <h2 class="project-card-title">Crazy Eights</h2>
+                    <p>
+                        A Java implementation of Uno-style gameplay with custom rules, suit differentiation, and a clean,
+                        self-contained card game system.
+                    </p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Game Logic</span>
+                        <span>OOP</span>
+                    </div>
+                    <div class="project-arrow">Open Project</div>
+                </div>
+            </a>
+        </section>
+    </main>
 </body>
 </html>
