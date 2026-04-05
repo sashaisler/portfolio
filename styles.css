@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --bg: #fbf5f7;
-    --bg-soft: #f5f7fa;
-    --surface: rgba(255, 250, 252, 0.86);
-    --surface-strong: rgba(252, 245, 248, 0.94);
-    --surface-accent: rgba(247, 221, 230, 0.34);
-    --text: #332d36;
-    --muted: #766c79;
-    --accent: #f3dce5;
-    --accent-strong: #f8e9ef;
-    --accent-soft: rgba(248, 233, 239, 0.45);
-    --line: rgba(185, 164, 176, 0.24);
-    --shadow-lg: 0 18px 40px rgba(154, 138, 149, 0.16);
-    --shadow-md: 0 10px 24px rgba(154, 138, 149, 0.12);
-    --shadow-sm: 0 5px 14px rgba(154, 138, 149, 0.1);
-    --binary-accent: rgba(198, 145, 165, 0.34);
+    --bg: #f6f7f8;
+    --bg-soft: #eef1f4;
+    --surface: rgba(255, 255, 255, 0.86);
+    --surface-strong: rgba(249, 251, 252, 0.94);
+    --surface-accent: rgba(220, 226, 232, 0.42);
+    --text: #2e343a;
+    --muted: #6c747d;
+    --accent: #d8dfe6;
+    --accent-strong: #eef2f5;
+    --accent-soft: rgba(231, 236, 241, 0.55);
+    --line: rgba(146, 156, 168, 0.24);
+    --shadow-lg: 0 18px 40px rgba(118, 126, 138, 0.16);
+    --shadow-md: 0 10px 24px rgba(118, 126, 138, 0.12);
+    --shadow-sm: 0 5px 14px rgba(118, 126, 138, 0.1);
+    --binary-accent: rgba(136, 143, 152, 0.34);
     --radius-xl: 18px;
     --radius-lg: 14px;
     --radius-md: 10px;
@@ -40,10 +40,10 @@ body {
     color: var(--text);
     line-height: 1.55;
     background:
-        radial-gradient(circle at top left, rgba(247, 221, 230, 0.7), transparent 30%),
-        radial-gradient(circle at top right, rgba(255, 241, 246, 0.82), transparent 28%),
-        radial-gradient(circle at bottom left, rgba(245, 232, 238, 0.5), transparent 24%),
-        linear-gradient(180deg, #fbf5f7 0%, #f7f8fb 50%, #f4f1f5 100%);
+        radial-gradient(circle at top left, rgba(224, 229, 235, 0.8), transparent 30%),
+        radial-gradient(circle at top right, rgba(250, 251, 252, 0.92), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(216, 223, 230, 0.5), transparent 24%),
+        linear-gradient(180deg, #f7f8f9 0%, #f1f4f6 50%, #eceff3 100%);
 }
 
 img,
@@ -79,7 +79,7 @@ a {
     padding: 0.55rem 0.65rem;
     border: 1px solid var(--line);
     border-radius: 14px;
-    background: rgba(255, 249, 251, 0.72);
+    background: rgba(255, 255, 255, 0.74);
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-sm);
 }
@@ -123,7 +123,7 @@ a {
 .nav-link:focus-visible,
 .nav-link[aria-current="page"] {
     color: var(--text);
-    background: rgba(247, 221, 230, 0.54);
+    background: rgba(222, 228, 234, 0.72);
     transform: translateY(-1px);
 }
 
@@ -134,7 +134,7 @@ a {
     padding: 0;
     border: 1px solid var(--line);
     border-radius: 8px;
-    background: rgba(247, 221, 230, 0.4);
+    background: rgba(223, 229, 235, 0.56);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -209,7 +209,7 @@ a {
     height: 1.55in;
     pointer-events: none;
     user-select: none;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'><defs><linearGradient id='pathMaskGradient' x1='18' y1='157' x2='157' y2='18' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='white' stop-opacity='0'/><stop offset='.08' stop-color='white' stop-opacity='.42'/><stop offset='.14' stop-color='white' stop-opacity='.96'/><stop offset='.86' stop-color='white' stop-opacity='.96'/><stop offset='.92' stop-color='white' stop-opacity='.42'/><stop offset='1' stop-color='white' stop-opacity='0'/></linearGradient><mask id='pathMask'><rect x='0' y='0' width='160' height='160' fill='url(%23pathMaskGradient)'/></mask><path id='binaryPath' d='M18 157 H146 A11 11 0 0 0 157 146 V18'/></defs><text fill='%23c691a5' fill-opacity='.92' mask='url(%23pathMask)' font-family='Menlo,Monaco,Consolas,monospace' font-size='8' font-weight='500' xml:space='preserve'><textPath href='%23binaryPath' startOffset='0%' textLength='268' lengthAdjust='spacingAndGlyphs'>01110011 01100001 01110011 01101000 01100001</textPath></text></svg>") bottom right / 100% 100% no-repeat;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'><defs><linearGradient id='pathMaskGradient' x1='18' y1='157' x2='157' y2='18' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='white' stop-opacity='0'/><stop offset='.08' stop-color='white' stop-opacity='.42'/><stop offset='.14' stop-color='white' stop-opacity='.96'/><stop offset='.86' stop-color='white' stop-opacity='.96'/><stop offset='.92' stop-color='white' stop-opacity='.42'/><stop offset='1' stop-color='white' stop-opacity='0'/></linearGradient><mask id='pathMask'><rect x='0' y='0' width='160' height='160' fill='url(%23pathMaskGradient)'/></mask><path id='binaryPath' d='M18 157 H146 A11 11 0 0 0 157 146 V18'/></defs><text fill='%23889098' fill-opacity='.92' mask='url(%23pathMask)' font-family='Menlo,Monaco,Consolas,monospace' font-size='8' font-weight='500' xml:space='preserve'><textPath href='%23binaryPath' startOffset='0%' textLength='268' lengthAdjust='spacingAndGlyphs'>01110011 01100001 01110011 01101000 01100001</textPath></text></svg>") bottom right / 100% 100% no-repeat;
     z-index: 1;
 }
 
@@ -300,24 +300,24 @@ a {
 
 .button-link.primary {
     color: var(--text);
-    background: linear-gradient(135deg, rgba(247, 221, 230, 0.86), rgba(252, 240, 244, 0.92));
-    border-color: rgba(232, 194, 208, 0.7);
+    background: linear-gradient(135deg, rgba(226, 232, 238, 0.92), rgba(246, 248, 250, 0.96));
+    border-color: rgba(171, 181, 191, 0.44);
 }
 
 .button-link.secondary {
     color: var(--text);
-    background: rgba(255, 249, 251, 0.82);
-    border-color: rgba(227, 204, 214, 0.52);
+    background: rgba(255, 255, 255, 0.84);
+    border-color: rgba(178, 188, 198, 0.38);
 }
 
 .button-link.secondary:hover,
 .button-link.secondary:focus-visible {
-    background: rgba(251, 238, 243, 0.94);
+    background: rgba(244, 247, 249, 0.96);
 }
 
 .button-link.primary:hover,
 .button-link.primary:focus-visible {
-    background: linear-gradient(135deg, rgba(245, 214, 225, 0.96), rgba(252, 236, 242, 0.98));
+    background: linear-gradient(135deg, rgba(217, 224, 231, 0.96), rgba(241, 244, 247, 0.98));
 }
 
 .highlight-card,
@@ -325,7 +325,7 @@ a {
     padding: 0.8rem 0.9rem;
     border: 1px solid var(--line);
     border-radius: var(--radius-md);
-    background: rgba(255, 248, 251, 0.84);
+    background: rgba(250, 251, 252, 0.9);
 }
 
 .highlight-label,
@@ -433,7 +433,7 @@ a {
 .skill-list li {
     padding: 0.38rem 0.62rem;
     border-radius: 999px;
-    background: linear-gradient(135deg, rgba(250, 233, 239, 0.84), rgba(255, 246, 249, 0.86));
+    background: linear-gradient(135deg, rgba(239, 243, 246, 0.92), rgba(252, 253, 254, 0.9));
     border: 1px solid var(--line);
     font-size: 0.8rem;
     font-weight: 600;
@@ -487,7 +487,7 @@ a {
     border: 1px solid var(--line);
     border-radius: 16px;
     overflow: visible;
-    background: linear-gradient(180deg, rgba(255, 249, 251, 0.9), rgba(249, 242, 246, 0.94));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 247, 249, 0.96));
     box-shadow: var(--shadow-md);
     transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
     animation: rise-in 0.75s ease both;
@@ -496,7 +496,7 @@ a {
 .project-card:hover,
 .project-card:focus-visible {
     transform: translateY(-2px);
-    border-color: rgba(230, 199, 212, 0.62);
+    border-color: rgba(176, 186, 196, 0.5);
     box-shadow: var(--shadow-lg);
 }
 
@@ -547,8 +547,8 @@ a {
 .project-tags span {
     padding: 0.25rem 0.45rem;
     border-radius: 6px;
-    background: linear-gradient(135deg, rgba(247, 221, 230, 0.62), rgba(255, 243, 247, 0.82));
-    color: #7d6470;
+    background: linear-gradient(135deg, rgba(228, 234, 239, 0.86), rgba(248, 250, 252, 0.92));
+    color: #6f7780;
     font-size: 0.72rem;
     font-weight: 700;
 }
@@ -572,7 +572,7 @@ a {
     padding: 0.5rem 0.8rem;
     border: 1px solid var(--line);
     border-radius: 8px;
-    background: linear-gradient(135deg, rgba(247, 221, 230, 0.5), rgba(255, 244, 248, 0.82));
+    background: linear-gradient(135deg, rgba(229, 235, 240, 0.72), rgba(248, 250, 252, 0.9));
     color: var(--muted);
     font-size: 0.92rem;
     font-weight: 600;
@@ -583,7 +583,7 @@ a {
 .back-link:hover,
 .back-link:focus-visible {
     color: var(--text);
-    background: linear-gradient(135deg, rgba(245, 214, 225, 0.62), rgba(255, 238, 244, 0.92));
+    background: linear-gradient(135deg, rgba(219, 226, 232, 0.82), rgba(244, 247, 250, 0.96));
     transform: translateY(-1px);
 }
 
@@ -654,7 +654,7 @@ a {
     padding: 0.75rem;
     border: 1px solid var(--line);
     border-radius: 12px;
-    background: linear-gradient(180deg, rgba(251, 238, 243, 0.84), rgba(255, 246, 249, 0.88));
+    background: linear-gradient(180deg, rgba(245, 248, 250, 0.9), rgba(251, 252, 253, 0.92));
 }
 
 .media-frame {
@@ -721,7 +721,7 @@ a {
 .project-link:hover,
 .project-link:focus-visible {
     transform: translateY(-2px);
-    border-color: rgba(15, 118, 110, 0.28);
+    border-color: rgba(157, 167, 178, 0.34);
     box-shadow: var(--shadow-sm);
 }
 
@@ -733,7 +733,7 @@ a {
     padding: 0.35rem 0.55rem;
     border: 1px solid var(--line);
     border-radius: 6px;
-    background: rgba(244, 238, 248, 0.16);
+    background: rgba(235, 239, 244, 0.24);
     color: var(--muted);
     font-size: 0.78rem;
     font-weight: 600;
@@ -796,7 +796,7 @@ a {
         padding: 0.6rem;
         border: 1px solid var(--line);
         border-radius: 12px;
-        background: rgba(15, 20, 27, 0.98);
+        background: rgba(250, 251, 252, 0.98);
         box-shadow: var(--shadow-md);
     }
 
